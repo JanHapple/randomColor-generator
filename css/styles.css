@@ -1,0 +1,102 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("/fonts/plus-square-regular.svg");
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 80vw;
+    /* height: vh; */
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.new-color {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 12px;
+    width: 20vw;
+    height: 30vh;
+    color: aliceblue;
+    text-decoration: solid black;
+    box-shadow: 2px 2px 6px black;    
+    margin: 10px;
+}
+
+.delete-color {
+    position: absolute;
+    font-size: 1.4rem;
+    opacity: .8;
+    right: 1.6vw;
+    top: 1.8vh;
+    padding: 2px 6px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px black;
+    cursor: pointer;
+}
+
+.fa-plus-square {
+    padding: 4px;
+    margin-right: 5px;
+    font-size: 1.6rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input {
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+button {
+    font-size: 1.6rem;
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(0, 128, 0);
+    color: aliceblue;
+    cursor: pointer;
+    transition: .8s;
+}
+
+button:hover {
+    background-color: rgb(0, 200, 0);
+}
+
+input:focus {
+    background-color: rgb(230, 230, 230);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
